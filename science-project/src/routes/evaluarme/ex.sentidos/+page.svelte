@@ -62,13 +62,17 @@
       }, 0);
     };
   </script>
-  
+  <div class="body">
+    <br>
+    <br>
+    <br>
   <main>
+    <br>
     <h1>Examen: Responde las siguientes preguntas</h1>
   
     <form>
       {#each preguntas as pregunta, index}
-        <div class="pregunta">
+        <div class="question">
           <h2>{index + 1}. {pregunta.pregunta}</h2>
           {#each pregunta.opciones as opcion}
             <label>
@@ -83,44 +87,72 @@
     </form>
   
     <h3>Puntuación: {puntuacion} / 100</h3>
+    <br>
+    <br>
+    <a href="/evaluarme">Volver</a>
   </main>
+  <br>
+  <br>
+  <br>
+</div>
   
   <style>
-    main {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 600px;
-      margin: 0 auto;
+
+    .body{
+      background-image: url($lib/imagenes/general.jpg);
+      background-size: cover;  
+      background-position: center; 
+      background-repeat: no-repeat;
     }
+  main {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  }
   
-    h1 {
-      text-align: center;
-    }
+  h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  }
   
-    .pregunta {
-      margin-bottom: 20px;
-    }
+  .question {
+  margin-bottom: 20px;
+  text-align: left;
+  }
   
-    button {
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
+  .question {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  }
   
-    button:hover {
-      background-color: #0056b3;
-    }
+  label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  }
   
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
+  input[type="radio"] {
+  margin-right: 10px;
+  }
   
-    h3 {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 1.5em;
-    }
+  button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  }
+  
+  button:hover {
+  background-color: #0056b3;
+  }
   </style>

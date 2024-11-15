@@ -29,12 +29,12 @@
 		<nav><a href="https://concepto.de/celula-2/">Más aquí</a></nav>
 		<br>
 		<br>
-		<h1>Tipos de celula</h1>
+		<h1>Tipos de Célula</h1>
 		<br>
 		<br>
 		<center>
-			<a href="/temas/celula/eucariota">celula eucariota</a>
-			<a href="/temas/celula/procariota">celula procariota</a>
+			<a href="/temas/celula/eucariota">Célula Eucariota</a>
+			<a href="/temas/celula/procariota">Célula Procariota</a>
 		</center>
 		<br>
 		<br>
@@ -42,7 +42,7 @@
 		<br>
 		<br>
 		<br>
-		<a href="/temas">atras</a>
+		<a href="/temas">Volver</a>
 	</main>
 </div>
 <style>

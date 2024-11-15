@@ -64,15 +64,16 @@
         if (respuesta === preguntas[index].correcta) {
           result += `Pregunta ${index + 1}: Correcto\n`;
           puntuacion += 20;
-        } else {
-          result += `Pregunta ${index + 1}: Incorrecto. La respuesta correcta era: ${preguntas[index].correcta.toUpperCase()}\n`;
-        }
+        } 
       });
   
       feedback = result + `\nPuntaje Total: ${puntuacion} puntos`;
     };
   </script>
-  
+  <div class="body">
+    <br>
+    <br>
+    <br>
   <main>
     <h1>Examen de Células</h1>
     
@@ -97,53 +98,86 @@
     {#if feedback}
       <pre>{feedback}</pre>
     {/if}
+    <br>
+    <br>
+    <a href="/evaluarme">volver</a>
+    <br>
   </main>
-  
+  <br>
+  <br>
+  <br>
+  </div>
   <style>
-    main {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
+
+    .body{
+      background-image: url($lib/imagenes/general.jpg);
+	  background-size: cover;  
+		  background-position: center; 
+		  background-repeat: no-repeat;
     }
-  
-    h1 {
-      text-align: center;
-    }
-  
-    .pregunta {
-      margin-bottom: 20px;
-    }
-  
-    button {
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  
-    button:hover {
-      background-color: #0056b3;
-    }
-  
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-  
-    h3 {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 1.5em;
-    }
-  
-    pre {
-      margin-top: 20px;
-      white-space: pre-wrap;
-      font-size: 16px;
-      color: #333;
-    }
+main {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.pregunta {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.pregunta h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+pre {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  font-size: 1em;
+  color: #333;
+  text-align: left;
+}
   </style>
   

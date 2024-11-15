@@ -22,9 +22,16 @@
       feedback = `¡Examen completado! Obtuviste ${totalPoints} puntos de 100.`;
     }
   </script>
-  
+
+  <div class="body">
+    <br>
+    <br>
+    <br>
   <main class="container">
-    <h2>Examen del Medio Ambiente</h2>
+    <br>
+    <br>
+    <h1>Examen del Medio Ambiente</h1>
+    <br>
     <form on:submit|preventDefault={gradeExam}>
   
       <!-- Pregunta 1 -->
@@ -68,49 +75,71 @@
     </form>
   
     <div class="feedback">{feedback}</div>
+    <br>
+    <br>
+    <a href="/evaluarme">Volver</a>
   </main>
-  
+  <br>
+  <br>
+  <br>
+  </div>
   <style>
-    .container {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-      margin: auto;
+
+    .body{
+      background-image: url($lib/imagenes/general.jpg);
+      background-size: cover;  
+      background-position: center; 
+      background-repeat: no-repeat;
     }
+  main {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  }
   
-    .question {
-      margin-top: 15px;
-    }
+  h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  }
   
-    .feedback {
-      margin-top: 20px;
-      font-weight: bold;
-    }
+  .question {
+  margin-bottom: 20px;
+  text-align: left;
+  }
   
-    main {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
+  .question {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  }
   
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
+  label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  }
   
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
+  input[type="radio"] {
+  margin-right: 10px;
+  }
   
-    button:hover {
-      background-color: #0056b3;
-    }
+  button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  }
+  
+  button:hover {
+  background-color: #0056b3;
+  }
   </style>
-  

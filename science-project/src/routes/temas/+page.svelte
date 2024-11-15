@@ -8,7 +8,7 @@
       <li><a href="/temas">Aprende</a></li> 
       <li><a href="/nosotros">Nuestro Origen</a></li> 
       <li><a href="/referencias">Referencias</a></li>
-      <li><a href="/evaluarme">evaluarme</a></li> 
+      <li><a href="/evaluarme">Evaluarme</a></li> 
     </ul> 
   </nav> 
 </header> 
@@ -133,7 +133,6 @@
 }
 
 .card-details {
- color: black;
  height: 100%;
  gap: .5em;
  display: grid;
@@ -165,17 +164,23 @@
 
 /*Hover*/
 .card:hover {
- border-color: #008bf8;
- box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  background-image:  url($lib/imagenes/fondo.jpg);
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  color:#ffffff;
 }
 
 .card:hover .card-button {
+  border-color: #000000;
  transform: translate(-50%, 50%);
  opacity: 1;
 }
 .body {
 	  font-family: 'Comic Sans MS', cursive, sans-serif;
-  
+    background-image: url($lib/imagenes/general.jpg);
+	  background-size: cover;  
+		background-position: center; 
+		background-repeat: no-repeat;
   }
   
   header {
@@ -229,7 +234,7 @@
 
   main h1 {
 	  font-size: 2.5em;
-	  color: #2c6cf7;
+	  color:#ffffff;
 	  margin-bottom: 20px;
   }
 </style>

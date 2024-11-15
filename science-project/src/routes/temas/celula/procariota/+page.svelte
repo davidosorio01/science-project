@@ -5,7 +5,7 @@
 
 <div class="alto" style={`background-image:url(${fondo})`}>
     <main>
-        <h1>CELULA PROCARIOTA</h1>
+        <h1>CÉLULA PROCARIOTA</h1>
         <p>
             Las células procariotas tienen una estructura básica sencilla, sin membrana nuclear, por lo
             que su material genético se encuentra disperso, ocupando un espacio llamado nucleoide, y que
@@ -22,7 +22,7 @@
 		</center>
         <br>
         <br>
-        <a href="/temas/celula">atrás</a>
+        <a href="/temas/celula">Atrás</a>
     </main>
 </div>
 <style>

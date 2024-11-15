@@ -5,7 +5,7 @@
 
 <div class="alto" style={`background-image:url(${fondo})`}>
     <main>
-        <h1>CELULA EUCARIOTA</h1>
+        <h1>CÉLULA EUCARIOTA</h1>
         <p>
         Las células eucariotas tienen una estructura más compleja que las procariotas. Tienen el
         núcleo rodeado de una membrana nuclear, por lo que su material genético queda contenido en
@@ -23,7 +23,7 @@
 		</center>
         <br>
         <br>
-        <a href="/temas/celula">atrás</a>
+        <a href="/temas/celula">Atrás</a>
     </main>
 </div>
 <style>

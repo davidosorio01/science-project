@@ -77,14 +77,7 @@
   </main>
   <style>
     /* From Uiverse.io by alexruix */ 
-    .body {
-	  font-family: 'Comic Sans MS', cursive, sans-serif;
-	  background-image: url($lib/imagenes/general.jpg);
-	  background-size: cover;  
-		  background-position: center; 
-		  background-repeat: no-repeat;
-  }
-
+  
   .cards {
     display: flex;
     gap: 20px;
@@ -105,7 +98,6 @@
   }
   
   .card-details {
-   color: black;
    height: 100%;
    gap: .5em;
    display: grid;
@@ -137,71 +129,77 @@
   
   /*Hover*/
   .card:hover {
-   border-color: #008bf8;
-   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    background-image:  url($lib/imagenes/fondo.jpg);
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    color:#ffffff;
   }
   
   .card:hover .card-button {
+    border-color: #000000;
    transform: translate(-50%, 50%);
    opacity: 1;
   }
   .body {
-        font-family: 'Comic Sans MS', cursive, sans-serif;
-    
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-image: url($lib/imagenes/general.jpg);
+      background-size: cover;  
+      background-position: center; 
+      background-repeat: no-repeat;
     }
     
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #2c6cf7; /* Color de fondo del header */
-        padding: 10px 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2c6cf7; /* Color de fondo del header */
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     
     .logo {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
     
     .logo span {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: #fff;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
     }
     
     .menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
     }
     
     .menu ul li {
-        margin: 0 15px;
+      margin: 0 15px;
     }
     
     .menu ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2em;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
     }
     
     .menu ul li a:hover {
-        color: #000000;
+      color: #000000;
     }
     
     main {
-        text-align: center;
-        padding: 50px 50px;
-        background-image: url('background.jpg'); /* Ruta a tu imagen de fondo */
-        background-size: cover;
-        background-position: center;
+      text-align: center;
+      padding: 50px 50px;
+      background-image: url('background.jpg'); /* Ruta a tu imagen de fondo */
+      background-size: cover;
+      background-position: center;
     }
   
     main h1 {
-        font-size: 2.5em;
-        color: #ffffff;
-        margin-bottom: 20px;
+      font-size: 2.5em;
+      color:#ffffff;
+      margin-bottom: 20px;
     }
   </style>

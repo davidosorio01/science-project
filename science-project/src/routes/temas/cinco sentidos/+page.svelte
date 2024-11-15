@@ -37,7 +37,7 @@
         </div>
         <br>
         <br>
-        <a href="/temas">volver</a>
+        <a href="/temas">Atrás</a>
         <br>
         <br>
     </main>

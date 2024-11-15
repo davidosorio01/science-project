@@ -19,13 +19,21 @@
         <p>Consumen energía. La vida requiere de un gasto energético para operar, y dicha energía se obtiene del medio ambiente a partir de diversos mecanismos, que introducen al cuerpo materia y la someten a reacciones químicas.</p>
         <p>Reaccionan a su entorno. Una de las características de los seres vivos es que no existen aparte de su entorno y responden a las condiciones de éste, es decir, interactúan con él de diferentes maneras, y en consecuencia también lo modifican.</p>
         <br>
-		<center><img src={seres} alt=""></center>
-        
+		<center><img src={seres} alt="" style="height: 65%; width: 70%;"></center>
         <br>
-        <a href="https://concepto.de/seres-vivos/">ver mas</a>
+		<br>
+        <br>
+        <a href="https://concepto.de/seres-vivos/">Más</a>
 		<br>
 		<br>
-		<a href="/temas">volver</a>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a href="/temas">Atrás</a>
+		<br>
+		<br>
+		<br>
     </main>
 </div>
 <style>

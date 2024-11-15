@@ -18,12 +18,12 @@
         <center><img src={ecosistema} alt="" style="height: 65%; width: 70%;"></center>
         <br>
 		<br>
-        <a href="https://concepto.de/ecosistemas/#ixzz8qjgfoaVQ">más</a>
+        <a href="https://concepto.de/ecosistemas/#ixzz8qjgfoaVQ">Más</a>
 		<br>
 		<br>
 		<br>
 		<br>
-		<a href="/temas">volver</a>
+		<a href="/temas">Atrás</a>
 		<br>
 		<br>
     </main>

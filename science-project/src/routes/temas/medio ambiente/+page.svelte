@@ -22,13 +22,13 @@
         <br>
 		<br>
 		<br>
-        <a href="https://concepto.de/medio-ambiente/">ver más</a>
+        <a href="https://concepto.de/medio-ambiente/">Más</a>
 		<br>
 		<br>
 		<br>
 		<br>
 		<br>
-		<a href="/temas">volver</a>
+		<a href="/temas">Atrás</a>
 		<br>
 		<br>
 		<br>

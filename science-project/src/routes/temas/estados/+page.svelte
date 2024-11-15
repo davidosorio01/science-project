@@ -45,7 +45,7 @@
         </div>
         <br>
         <br>
-        <a href="/temas">atrás</a>
+        <a href="/temas">Atrás</a>
         <br>
         <br>
     </main> 

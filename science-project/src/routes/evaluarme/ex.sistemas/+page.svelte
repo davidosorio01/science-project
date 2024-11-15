@@ -21,28 +21,14 @@
       }
       feedback = `¡Examen completado! Obtuviste ${totalPoints} puntos de 100.`;
     }
-  </script>
-  
-  <style>
-    .container {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-      margin: auto;
-    }
-  
-    .question {
-      margin-top: 15px;
-    }
-  
-    .feedback {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-  </style>
-  
-  <div class="container">
-    <h2>Examen de los Sistemas del Cuerpo</h2>
+</script>
+<div class="body">
+  <br>
+  <br>
+  <br>
+  <main>
+    <br>
+    <h1>Examen de los Sistemas del Cuerpo</h1>
   
     <div class="question">
       <p>1. ¿De cuántos sistemas del cuerpo humano hemos hablado?</p>
@@ -107,6 +93,76 @@
     </div>
   
     <button on:click={gradeExam}>Enviar</button>
+    <br>
     <div class="feedback">{feedback}</div>
-  </div>
+    <br>
+    <br>
+    <a href="/evaluarme">Volver</a>
+    <br>
+  </main>
+  <br>
+  <br>
+  <br>
+</div>
+
+  <style>
+
+    .body{
+      background-image: url($lib/imagenes/general.jpg);
+      background-size: cover;  
+      background-position: center; 
+      background-repeat: no-repeat;
+    }
+  main {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  }
+  
+  h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  }
+  
+  .question {
+  margin-bottom: 20px;
+  text-align: left;
+  }
+  
+  .question {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  }
+  
+  label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  }
+  
+  input[type="radio"] {
+  margin-right: 10px;
+  }
+  
+  button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  }
+  
+  button:hover {
+  background-color: #0056b3;
+  }
+  </style>
   

@@ -33,11 +33,11 @@
         <br>
         <br>
         <br>
-        <a href="https://concepto.de/estaciones-del-ano/">ver más</a>
+        <a href="https://concepto.de/estaciones-del-ano/">Más</a>
         <br>
         <br>
         <br>
-        <br><a href="/temas">volver</a>
+        <br><a href="/temas">Atrás</a>
         <br>
         <br>
     </main>

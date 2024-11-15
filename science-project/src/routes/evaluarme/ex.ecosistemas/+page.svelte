@@ -22,20 +22,24 @@
     feedback = `¡Examen completado! Obtuviste ${totalPoints} puntos de 100.`;
   }
 </script>
-
+<div class="body">
+  <br>
+  <br>
+  <br>
 <main class="container">
-  <h2>Examen del Ecosistema</h2>
+  <br>
+  <h1>Examen del Ecosistema</h1>
   <form on:submit|preventDefault={gradeExam}>
 
     <!-- Pregunta 1 -->
-    <div class="question">
+    <div class="pregunta">
       <p>1. Un ecosistema es un sistema que está formado por un conjunto de organismos, el medio ambiente físico en el que viven (hábitat) y las relaciones tanto bióticas como abióticas que se establece entre ellos.</p>
       <label><input type="radio" bind:group={answers[0]} value="a" /> a. Verdadero</label>
       <label><input type="radio" bind:group={answers[0]} value="b" /> b. Falso</label>
     </div>
 
     <!-- Pregunta 2 -->
-    <div class="question">
+    <div class="pregunta">
       <p>2. ¿Cuántos niveles tróficos existen?</p>
       <label><input type="radio" bind:group={answers[1]} value="a" /> a. 2</label> 
       <label><input type="radio" bind:group={answers[1]} value="b" /> b. 4</label> 
@@ -44,21 +48,21 @@
     </div>
 
     <!-- Pregunta 3 -->
-    <div class="question">
+    <div class="pregunta">
       <p>3. Los niveles tróficos son: consumidores, descomponedores y productores.</p> 
       <label><input type="radio" bind:group={answers[2]} value="a" /> a. Verdadero</label>
       <label><input type="radio" bind:group={answers[2]} value="b" /> b. Falso</label>
     </div>
 
     <!-- Pregunta 4 -->
-    <div class="question">
+    <div class="pregunta">
       <p>4. Los productores no son capaces de producir materia orgánica (su propio alimento)?</p>
       <label><input type="radio" bind:group={answers[3]} value="a" /> a. Verdadero</label>
       <label><input type="radio" bind:group={answers[3]} value="b" /> b. Falso</label>
     </div>
 
     <!-- Pregunta 5 -->
-    <div class="question">
+    <div class="pregunta">
       <p>5. Entre organismos descomponedores se encuentran los _____, las ________ y algunas bacterias que reciclan la materia orgánica.</p>
       <label><input type="radio" bind:group={answers[4]} value="a" /> a. Hongos, bacterias</label>
       <label><input type="radio" bind:group={answers[4]} value="b" /> b. Sapos, lombrices</label>
@@ -68,50 +72,75 @@
 
     <button type="submit">Enviar</button>
   </form>
-
+  <br>
+  <br>
   <div class="feedback">{feedback}</div>
+  <br>
+  <br>
+  <a href="/evaluarme">Volver</a>
 </main>
+<br>
+<br>
+<br>
+</div>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-  }
 
-  .question {
-    margin-top: 15px;
+  .body{
+    background-image: url($lib/imagenes/general.jpg);
+  background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
   }
+main {
+background-color: #fff;
+padding: 20px;
+max-width: 600px;
+width: 100%;
+margin: 0 auto;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+text-align: center;
+}
 
-  .feedback {
-    margin-top: 20px;
-    font-weight: bold;
-  }
+h1 {
+font-size: 2em;
+margin-bottom: 20px;
+}
 
-  main {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-  }
+.pregunta {
+margin-bottom: 20px;
+text-align: left;
+}
 
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
+.pregunta {
+font-size: 1.2em;
+margin-bottom: 10px;
+}
 
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+label {
+display: block;
+margin-bottom: 10px;
+font-size: 1em;
+cursor: pointer;
+}
 
-  button:hover {
-    background-color: #0056b3;
-  }
+input[type="radio"] {
+margin-right: 10px;
+}
+
+button {
+padding: 10px 20px;
+background-color: #007BFF;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1em;
+margin-top: 20px;
+}
+
+button:hover {
+background-color: #0056b3;
+}
 </style>

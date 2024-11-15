@@ -9,6 +9,9 @@
 </script>
   
 <div class="grid" style={`background-image:url(${fondo})`}>
+  <br>
+  <br>
+  <br>
   <main>
     <center> 
     <form action="?/register" method="POST">
@@ -35,7 +38,7 @@
       <br>
       <div class="brutalist-container">
         <label class="brutalist-label" for="password">Crea una Contraseña</label>
-        <input class="brutalist-input smooth-type" id="password" placeholder="Contraseña" name="password" type="password" required />
+        <input class="brutalist-input smooth-type" id="password" placeholder="Mínimo 10 Carácteres" name="password" type="password" required />
       </div>
       <br>
       <br>
@@ -62,6 +65,9 @@
     </form>
     </center>
   </main>
+  <br>
+  <br>
+  <br>
 </div>
 <style>
 .m {

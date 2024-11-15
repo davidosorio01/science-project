@@ -30,14 +30,14 @@
 		<br>
 		<br>
 		<div class="brutalist-container">
-			<label class="brutalist-label" for="email">Escribe tu email</label>
+			<label class="brutalist-label" for="email">Escribe tu Correo Electrónico</label>
 			<input class="brutalist-input smooth-type" id="email" name="email" type="email" required />
 		</div>
 		<br>
 		<br>
 		<br>
 		<div class="brutalist-container">
-			<label class="brutalist-label" for="password">Escribe tu Password</label>
+			<label class="brutalist-label" for="password">Escribe tu Contraseña</label>
 			<input class="brutalist-input smooth-type" id="password" name="password" type="password" required />
 		</div>
 		<br>
