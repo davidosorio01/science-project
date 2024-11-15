@@ -9,9 +9,9 @@
 	  </ul> 
 	</nav> 
   </header> 
-  <main class="body"> 
-	<h1>¡BIENVENIDO A SCIENCE!</h1>
-	<p>¡QUE GUSTO QUE TE HAYAS UNIDO!</p> 
+  <main class="body">
+	<h1>¡HOLA!</h1>
+	<p>BIENVENIDO A SCIENCE</p> 
 	<br>
 	<br>
 	<br>
@@ -103,7 +103,7 @@
   
   footer {
 	  text-align: center;
-	  padding: 22px;
+	  padding: 23px;
 	  background-color: #2c6cf7;
 	  color: #fff;
 	  position: absolute;
