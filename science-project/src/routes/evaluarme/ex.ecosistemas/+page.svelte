@@ -77,7 +77,7 @@
   <div class="feedback">{feedback}</div>
   <br>
   <br>
-  <a class="b" href="/evaluarme">Volver</a>
+  <a href="/evaluarme">Volver</a>
 </main>
 <br>
 <br>
@@ -142,45 +142,5 @@ margin-top: 20px;
 
 button:hover {
 background-color: #0056b3;
-}
-
-/* From Uiverse.io by alexroumi */ 
-.b {
- padding: 15px 25px;
- border: unset;
- border-radius: 15px;
- color: #212121;
- z-index: 1;
- background: #e8e8e8;
- position: relative;
- font-weight: 1000;
- font-size: 17px;
- -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- transition: all 250ms;
- overflow: hidden;
-}
-
-.b::before {
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 0;
- border-radius: 15px;
- background-color: #212121;
- z-index: -1;
- -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- transition: all 250ms
-}
-
-.b:hover {
- color: #e8e8e8;
-}
-
-.b:hover::before {
- width: 100%;
 }
 </style>
