@@ -11,6 +11,7 @@ declare global {
 				rol: string;
 				password: string | null;
 				token: string | null;
+				resetToken: string;
 			};
 		}
 		// interface PageData {}

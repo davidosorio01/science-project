@@ -11,6 +11,7 @@ export const actions: Actions = {
 
   register: async ({ request }: RequestEvent) => {
     const data = Object.fromEntries(await request.formData());
+    console.log(data)
 
     if (
       typeof data.email !== 'string' ||
@@ -28,16 +29,17 @@ export const actions: Actions = {
     if (user.length > 0) {
       return fail(400, { user: true });
     }
-    
-    await db.insert(usuarios).values({ 
+    const values = {
       id: crypto.randomUUID(),
       username: data.username,
       email: data.email, 
       rol: 'user',
       password: await bcrypt.hash(data.password, 10),
       token: crypto.randomUUID(),
-    });
+    }
+    console.log(values)
+    await db.insert(usuarios).values(values) 
     
-    throw redirect(303, `/home`);
+    throw redirect(303, '/home');
   },
 };
