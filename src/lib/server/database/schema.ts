@@ -1,4 +1,4 @@
-import { sqliteTable, text, integer, uniqueIndex } from "drizzle-orm/sqlite-core"
+import { sqliteTable, text, foreignKey, integer, uniqueIndex } from "drizzle-orm/sqlite-core"
   import { sql } from "drizzle-orm"
 
 export const usuarios = sqliteTable("usuarios", {
