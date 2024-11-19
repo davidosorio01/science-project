@@ -1,4 +1,4 @@
-import { db } from '$lib/server/database/client'
+import { db } from '$lib/server/database/connection'
 import { usuarios } from '$lib/server/database/schema'
 import { eq } from 'drizzle-orm'
 

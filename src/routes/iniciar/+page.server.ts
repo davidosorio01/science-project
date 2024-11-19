@@ -2,7 +2,7 @@ import type { Cookies } from '@sveltejs/kit';
 import { fail, redirect } from '@sveltejs/kit'; 
 import crypto from 'crypto';  
 import type { Actions } from './$types';
-import { db } from '$lib/server/database/client';  
+import { db } from '$lib/server/database/connection';  
 import { usuarios } from '$lib/server/database/data';  
 import bcrypt from 'bcryptjs';
 import { eq } from 'drizzle-orm';  

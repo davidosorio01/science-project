@@ -8,7 +8,6 @@ export const usuarios = sqliteTable("usuarios", {
 	rol: text().notNull(),
 	password: text(),
 	token: text(),
-	resetToken: text(),
 });
 
 export const session = sqliteTable("session", {

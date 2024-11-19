@@ -1,5 +1,4 @@
 import { sqliteTable, text, foreignKey, integer, uniqueIndex } from "drizzle-orm/sqlite-core"
-  import { sql } from "drizzle-orm"
 
 export const usuarios = sqliteTable("usuarios", {
 	id: text().default("sql`(lower(hex(randomblob(16))))`").primaryKey(),
@@ -8,7 +7,6 @@ export const usuarios = sqliteTable("usuarios", {
 	rol: text().notNull(),
 	password: text(),
 	token: text(),
-	resetToken: text(),
 });
 
 export const session = sqliteTable("session", {
